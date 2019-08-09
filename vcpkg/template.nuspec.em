@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-cv-bridge</id>
-    <version>2.1.2</version>
-    <title>ros-dashing-cv-bridge</title>
-    <authors>Patrick Mihelich; James Bowman</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This contains CvBridge, which converts between ROS2 Image messages and OpenCV images.</description>
+    <description>@(Description)</description>
     <dependencies>
-			<dependency id="ros-dashing-ament-index-python"/>
-			<dependency id="ros-dashing-sensor-msgs"/>
-			<dependency id="ros-dashing-ros-workspace"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
