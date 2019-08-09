@@ -1,17 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-vision-opencv</id>
-    <version>2.1.2</version>
-    <title>ros-dashing-vision-opencv</title>
-    <authors>Ethan Gao</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Packages for interfacing ROS2 with OpenCV, a library of programming functions for real time computer vision.</description>
+    <description>@(Description)</description>
     <dependencies>
-		<dependency id="ros-dashing-cv-bridge"/>
-		<dependency id="ros-dashing-image-geometry"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
